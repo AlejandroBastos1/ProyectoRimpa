@@ -1,0 +1,19 @@
+.footer p{
+    margin: 0;
+    color: rgba(100,100,100);
+    font-size: 25px;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(29, 54, 5);
+    padding: 10px ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.copyright {
+    margin-right: 75px;
+}
+

@@ -1,0 +1,788 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.775),
+      rgba(0, 0, 0, 0.651)
+    ),
+    url("../images/backgroundimage.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+  color: white;
+}
+
+/*Css de props.Login*/
+
+.noTienesCuenta {
+  color: azure;
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+.noTienesCuenta a{
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+.contenedorLogin {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  padding: 12px;
+}
+
+.contenedorTituloLogin h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(80, 80, 0);
+  margin-bottom: 60px;
+}
+
+.contenedorFormularioLogin{
+  border-style: solid;
+  border-radius: 4px;
+  border-color: rgba(177, 113, 36, 0.164);
+  background-color: rgba(44, 44, 44, 0.301);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 500px;
+  height: 300px;
+}
+
+.formularioLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formularioLogin input{
+  width: 400px;
+  height: 40px;
+  margin: 12px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: rgb(57, 57, 56);
+  background-color: black;
+  color: blanchedalmond;
+  font-size: 15px;
+  padding-left: 6px;
+}
+
+.formularioLogin input:focus{
+  width: 400px;
+  height: 40px;
+  margin: 12px;
+  border-radius: 3px;
+  border-style: solid;
+  background-color: rgb(43, 43, 42);
+  color: blanchedalmond;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.formularioLogin input::placeholder{
+  color: rgba(255, 235, 205, 0.44);
+}
+
+.formularioLogin button{
+  width: 170px;
+  height: 40px;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(197, 197, 197);
+  margin-top: 16px;
+  background-color: rgb(80, 80, 0);
+  border-radius: 3px;
+  border-style: none;
+  
+}
+
+.formularioLogin button:hover{
+  color: rgb(155, 142, 142);
+  background-color: rgb(55, 55, 2);
+  transition: 0.2s;
+}
+
+/*Css de props.Registro*/
+
+.tienesCuenta {
+  color: azure;
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+.tienesCuenta a{
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+.errorFormularioRegistro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 400px;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.603);
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.campoObligatorio{
+  color: rgb(255, 0, 0);
+  font-weight: 100px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.contenedorRegistro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  padding: 12px;
+}
+
+.contenedorTituloRegistro h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(80, 80, 0);
+  margin-bottom: 50px;
+}
+
+.contenedorFormularioRegistro{
+  border-style: solid;
+  border-radius: 4px;
+  border-color: rgba(177, 113, 36, 0.164);
+  background-color: rgba(44, 44, 44, 0.301);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 500px;
+  height: 450px;
+}
+
+.formularioRegistro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formularioRegistro input{
+  width: 400px;
+  height: 40px;
+  margin: 12px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: rgb(57, 57, 56);
+  background-color: black;
+  color: blanchedalmond;
+  font-size: 15px;
+  padding-left: 6px;
+}
+
+.formularioRegistro input:focus{
+  width: 400px;
+  height: 40px;
+  margin: 12px;
+  border-radius: 3px;
+  border-style: solid;
+  background-color: rgb(43, 43, 42);
+  color: blanchedalmond;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.formularioRegistro input::placeholder{
+  color: rgba(255, 235, 205, 0.44);
+}
+
+.formularioRegistro button{
+  width: 170px;
+  height: 40px;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(197, 197, 197);
+  margin-top: 16px;
+  background-color: rgb(80, 80, 0);
+  border-radius: 3px;
+  border-style: none;
+  
+}
+
+.formularioRegistro button:hover{
+  color: rgb(155, 142, 142);
+  background-color: rgb(55, 55, 2);
+  transition: 0.2s;
+}
+
+
+/*Css de props asistencia */
+
+.imgModulo1 {
+  height: 75px;
+  width: 75px;
+  margin-left: 120px;
+}
+
+.imgModulo2 {
+  height: 75px;
+  width: 75px;
+  margin-left: 120px;
+}
+
+.contenedorAsistencia {
+  background: rgba(38, 81, 1, 0.818);
+  box-shadow: 0 0 30px rgb(0, 0, 0);
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tituloAsistencia {
+  margin-bottom: 60px;
+  font-size: 50px;
+}
+
+.contenedorModulosAsistencia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtituloAsistencia {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #67ff20;
+}
+
+.parrafoAsistencia {
+  font-size: 25px;
+  color: blanchedalmond;
+  font-weight: normal;
+}
+
+.modulo1Asistencia {
+  padding-left: 20px;
+  margin-right: 12px;
+}
+
+.contenedorModulo1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.descripcionModulo1 {
+  width: 500px;
+}
+
+.modulo2Asistencia {
+  margin-left: 50px;
+}
+
+.contenedorModulo2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.descripcionModulo2 {
+  width: 500px;
+}
+
+.anclaAsistencia {
+  font-size: 25px;
+  font-weight: normal;
+  margin: 7px;
+  text-decoration-line: underline;
+}
+
+.anclaAsistencia:hover {
+  color: #67ff20;
+  transition-duration: 0.3s;
+}
+
+/*Css de datosUsuario*/
+
+.contenedorMisDatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 680px;
+  background: rgba(31, 77, 14, 0.612);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+  border-radius: 12px;
+}
+
+.tituloMisDatos {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.datosUsuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+}
+
+.imgFotoUsuario {
+  height: 150px;
+  width: 150px;
+}
+
+.informacionTextualUsuario {
+  display: flex;
+  flex-direction: column;
+  margin-right: 90px;
+  align-items: start;
+  margin-left: 30px;
+}
+
+.fotoUsuario {
+  height: 450px;
+}
+
+.inputDatosUsuario {
+  width: 360px;
+  height: 20px;
+  font-size: 20px;
+  color: blanchedalmond;
+  background: rgba(0, 0, 0, 0.752);
+  border-style: none;
+  transition: 0.5s ease-in;
+  outline: none;
+  box-shadow: none;
+  
+}
+
+.inputDatosUsuario:focus {
+  color: rgb(80, 80, 0);
+  background-color: rgba(255, 235, 205, 0.864);
+  box-shadow: none;
+  outline: none;
+  height: 20px;
+}
+
+.labelDatosUsuario {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*Css moduloOperacion*/
+
+.contenedorMisdatos {
+  border-style: solid;
+}
+
+.subContenedorOperacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  border-radius: 12px;
+  height: 750px;
+  margin-bottom: 0px;
+}
+
+.tituloOperacion {
+  margin-top: 250px;
+  font-size: 36px;
+  color: rgb(80, 80, 0);
+}
+
+.contenedorDobleModulo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.botonDobleModulo {
+  text-align: center;
+  margin-right: 5px;
+  font-size: 35px;
+  width: 500px;
+}
+
+.botonDobleModulo:hover {
+  background-color: black;
+  color: rgb(80, 80, 0);
+  transition-duration: 0.5s;
+  border-radius: 12px;
+}
+/* Css de Consultas */
+
+.contenedorConsulta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(32, 53, 24, 0.916);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+  border-radius: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+.contenedorTiempoLugar {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.contenedorTiempoSalida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 300px;
+}
+
+.contenedorTiempoTranscurrido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorTiempoLLegada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+}
+
+.contenedorInformacionGeneral {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.informacionVuelo {
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.informacionVuelo li {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 23px;
+  margin-top: 15px;
+  padding: 7;
+}
+
+.informacionVuelo h3 {
+  font-size: 22px;
+  color: #67ff20;
+  margin-bottom: 20px;
+}
+
+.informacionAvion {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 60px;
+}
+
+.informacionTripulacion {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 70px;
+}
+
+.informacionCarga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informacionCarga h4 {
+  font-size: 25px;
+  color: #67ff20;
+  margin-bottom: 20px;
+}
+
+.contenedorMaterialesAbordo p {
+  color: blanchedalmond;
+}
+
+.contenedoresMaterialesAbordo {
+  text-align: justify;
+}
+
+
+/*Css de generar */
+
+.contenedorGenerarOperacion {
+  color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: rgba(32, 53, 24, 0.916);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+  border-radius: 12px;
+}
+
+.contenedorGenerarOperacion p{
+  color: white;
+  font-size: 22px;
+}
+
+.tituloGenerarOperacion {
+  color: blanchedalmond;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap:20px;
+  width: 700px;
+}
+
+.tituloGenerarOperacion button{
+  background-color: blue;
+  width: 100px;
+  border-radius: 10px;
+  border-style: none;
+  color: blanchedalmond;
+  font-weight:bold;
+  font-size: 15px;
+}
+
+.tituloGenerarOperacion h2{
+  margin-right:100px ;
+}
+
+.contenedorAggInfoMate {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.contenedorInfo {
+
+  padding: 15px;
+}
+
+.contenedorInfo input{
+
+  height: 25px;
+  font-size: 20px;
+  color: blanchedalmond;
+  background: rgba(0, 0, 0, 0.752);
+  border-style: none;
+  transition: 0.5s ease-in;
+  outline: none;
+  box-shadow: none;
+}
+
+.contenedorInfo input:focus{
+  color: rgb(80, 80, 0);
+  background-color: rgba(255, 235, 205, 0.864);
+  box-shadow: none;
+  outline: none;
+  height: 25px;
+}
+
+.contenedorAvion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contenedorAvion label {
+  font-size:22px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+
+}
+
+.contenedorMatricula {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contenedorTripulacion1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.contenedorTripulacion1 label {
+  font-size:22px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.contenedorLibretaMilitarPil {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.contenedorLibretaMilitarCop {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.contenedorTripulacion2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contenedorDesp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.contenedorDesp select{
+  width: 100%;
+  height: 25px;
+  font-size: 15px;
+  color: blanchedalmond;
+  background: rgba(0, 0, 0, 0.752);
+  border-style: none;
+  transition: 0.5s ease-in;
+  outline: none;
+  box-shadow: none;
+  margin-top: 10px;
+}
+
+.contenedorDesp select:focus {
+  color: rgb(80, 80, 0);
+  background-color: rgba(255, 235, 205, 0.864);
+  box-shadow: none;
+  outline: none;
+  height: 25px;
+} 
+
+.contenedorMaterial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  gap: 14px;
+  
+}
+
+.botonesMaterialABordo {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.contenidoMateriales {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 23px;
+  height: 500px;
+  width: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.contenidoMateriales::-webkit-scrollbar{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.107);
+  padding: 3px;
+  border-radius: 12px;
+  width: 10px;
+}
+
+.contenidoMateriales::-webkit-scrollbar-button{ 
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.107);
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.contenidoMateriales::-webkit-scrollbar-thumb{
+  background-color: rgb(28, 160, 53);
+  border-radius: 12px;
+  width: 12px;
+}
+
+.contenidoMateriales::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(0, 181, 39);
+}
+
+.contenidoMateriales::-webkit-scrollbar-track{
+border-radius: 20px;
+}
+
+
+.tarjetaDeMaterial {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-color: red;
+  border-radius: 14px;
+  padding: 5px;
+}
+
+.informacionMaterial{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+}
